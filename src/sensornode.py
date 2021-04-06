@@ -36,7 +36,7 @@ class SensorNode:
 
     def __str__(self) -> str:
         environment = {"Temperature": self.temp, "Humidity": self.humidity, "Light": self.light}
-        data = {"Time": str(datetime.now()), "ENVIRONMENT": environment}
+        data = {"Time": str(datetime.utcnow()), "ENVIRONMENT": environment}
         return json.dumps(data)
 
     def read(self) -> None:
