@@ -1,1 +1,5 @@
-paho-mqtt
+paho-mqtt~=1.5.1
+pyserial~=3.5
+pip~=20.1.1
+wheel~=0.34.2
+setuptools~=49.2.0
